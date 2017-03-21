@@ -1,11 +1,21 @@
 # 项目介绍
 自定义的spring-boot的hbase starter，为hbase的query和更新等操作提供简易的api并集成spring-boot的auto configuration
+# 打包
+修改相关的maven私服地址
+```shell
+gradle clean install uploadArchives
+```
 # 使用方式
+## 依赖
+```shell
+compile "jthink:spring-boot-starter-hbase:0.0.1"
+```
 ## 集成
 在spring-boot项目的application.properties文件中加入spring.data.hbase.quorum配置项，并赋予正确的值
 ## 使用
 ### query
-
+1. 将上述配置项赋予正确的值
+2. dto定义
 ```java
 public class PeopleDto {
 
@@ -32,6 +42,7 @@ public class PeopleDto {
     }
 }
 ```
+3. RowMapper定义
 ```java
 import com.jthink.skyeye.data.hbase.api.RowMapper;
 import org.apache.hadoop.hbase.client.Result;
@@ -54,6 +65,7 @@ public class PeopleRowMapper implements RowMapper<PeopleDto> {
     }
 }
 ```
+4. query操作
 ```java
 import com.jthink.skyeye.data.hbase.api.HbaseTemplate;
 import org.apache.hadoop.hbase.client.Scan;
@@ -82,6 +94,8 @@ public class QueryService {
 }
 ```
 ### update等
+1. 将上述配置项赋予正确的值
+2. update、delete、put操作
 ```java
 import com.jthink.skyeye.data.hbase.api.HbaseTemplate;
 import org.apache.hadoop.hbase.client.Delete;
