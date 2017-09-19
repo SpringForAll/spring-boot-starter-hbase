@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.jthink.spring.boot.starter.hbase.boot.HbaseAutoConfiguration
+com.spring4all.spring.boot.starter.hbase.boot.HbaseAutoConfiguration

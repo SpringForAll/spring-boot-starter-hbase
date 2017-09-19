@@ -1,4 +1,4 @@
-package com.jthink.spring.boot.starter.hbase.api;
+package com.spring4all.spring.boot.starter.hbase.api;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
