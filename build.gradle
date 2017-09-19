@@ -4,7 +4,7 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 
-group = 'spring4all'
+group = 'com.spring4all'
 version = '0.0.1'
 
 sourceCompatibility = 1.7
@@ -17,7 +17,7 @@ ext {
   mavenReleaseUrl = 'http://192.168.88.8:8081/nexus/content/repositories/releases'
   mavenSnapshotUrl = 'http://192.168.88.8:8081/nexus/content/repositories/snapshots'
   springBootVersion = '1.5.6.RELEASE'
-  springVersion = '4.2.7.RELEASE'
+  springVersion = '4.3.10.RELEASE'
   hbaseVersion = '1.0.0-cdh5.4.4'
   slf4jVersion = '1.7.25'
 }
