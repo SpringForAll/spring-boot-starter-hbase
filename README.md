@@ -8,10 +8,10 @@ gradle clean install uploadArchives
 # 使用方式
 ## 依赖
 ```shell
-compile "jthink:spring-boot-starter-hbase:0.0.1"
+compile "com.spring4all:spring-boot-starter-hbase:0.0.1"
 ```
 ## 集成
-在spring-boot项目的application.properties文件中加入spring.data.hbase.quorum配置项，并赋予正确的值
+在spring-boot项目的application.properties文件中加入spring.data.hbase.quorum,spring.data.hbase.rootDir,spring.data.hbase.nodeParent配置项，并赋予正确的值
 ## 使用
 ### query
 1. 将上述配置项赋予正确的值
