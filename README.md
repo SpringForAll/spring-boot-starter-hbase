@@ -8,7 +8,7 @@ gradle clean install uploadArchives
 # 使用方式
 ## 依赖
 ```shell
-compile "com.spring4all:spring-boot-starter-hbase:0.0.1"
+compile "com.spring4all:spring-boot-starter-hbase:1.0.0.RELEASE"
 ```
 ## 集成
 在spring-boot项目的application.properties文件中加入spring.data.hbase.quorum,spring.data.hbase.rootDir,spring.data.hbase.nodeParent配置项，并赋予正确的值
