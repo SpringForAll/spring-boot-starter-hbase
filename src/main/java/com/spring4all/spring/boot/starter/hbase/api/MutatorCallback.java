@@ -7,8 +7,8 @@ import org.apache.hadoop.hbase.client.BufferedMutator;
  *
  * @author JThink
  * @version 0.0.1
- * @desc callback for hbase put delete and update
- * @date 2016-12-08 14:31:34
+ * desc： callback for hbase put delete and update
+ * date： 2016-12-08 14:31:34
  */
 public interface MutatorCallback {
 

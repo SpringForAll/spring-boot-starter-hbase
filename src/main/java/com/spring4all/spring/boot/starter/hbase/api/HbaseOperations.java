@@ -17,8 +17,8 @@ import java.util.List;
  *
  * @author JThink
  * @version 0.0.1
- * @desc copy from spring data hadoop hbase, modified by JThink, remove the unuse interface
- * @date 2016-11-15 14:49:52
+ * desc: copy from spring data hadoop hbase, modified by JThink, remove the unuse interface
+ * date: 2016-11-15 14:49:52
  */
 public interface HbaseOperations {
 
@@ -29,7 +29,6 @@ public interface HbaseOperations {
      * Allows for returning a result object (typically a domain object or collection of domain objects).
      *
      * @param tableName the target table
-     * @param action callback object that specifies the action
      * @param <T> action type
      * @return the result object of the callback action, or null
      */
@@ -41,7 +40,6 @@ public interface HbaseOperations {
      *
      * @param tableName target table
      * @param family column family
-     * @param action row mapper handling the scanner results
      * @param <T> action type
      * @return a list of objects mapping the scanned rows
      */
@@ -54,7 +52,6 @@ public interface HbaseOperations {
      * @param tableName target table
      * @param family column family
      * @param qualifier column qualifier
-     * @param action row mapper handling the scanner results
      * @param <T> action type
      * @return a list of objects mapping the scanned rows
      */
@@ -67,7 +64,6 @@ public interface HbaseOperations {
      *
      * @param tableName target table
      * @param scan table scanner
-     * @param action row mapper handling the scanner results
      * @param <T> action type
      * @return a list of objects mapping the scanned rows
      */

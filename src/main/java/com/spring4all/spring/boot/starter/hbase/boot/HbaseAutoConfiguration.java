@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Bean;
  *
  * @author JThink
  * @version 0.0.1
- * @desc hbase auto configuration
- * @date 2016-11-16 11:11:27
+ * desc： hbase auto configuration
+ * date： 2016-11-16 11:11:27
  */
 @org.springframework.context.annotation.Configuration
 @EnableConfigurationProperties(HbaseProperties.class)
