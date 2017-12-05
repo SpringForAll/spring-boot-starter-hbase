@@ -136,6 +136,20 @@ public class QueryService {
         Mutation delete = new Delete(Bytes.toBytes(""));
         this.hbaseTemplate.saveOrUpdate("people_table", delete);
     }
+    
+    public void saveOrUpdate() {
+        List<Mutation> saveOrUpdates = new ArrayList<>();
+        Put put = new Put(Bytes.toBytes("135xxxxxx"));
+        put.addColumn(Bytes.toBytes("people"), Bytes.toBytes("name"), Bytes.toBytes("JThink"));
+        saveOrUpdates.add(put);
+
+        Delete delete = new Delete(Bytes.toBytes("136xxxxxx"));
+        saveOrUpdates.add(delete);
+
+        // 继续add
+
+        this.hbaseTemplate.saveOrUpdates("people_table", saveOrUpdates);
+    }
 }
 ```
 
