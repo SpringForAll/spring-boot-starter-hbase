@@ -6,7 +6,7 @@
 
     <groupId>com.spring4all</groupId>
     <artifactId>spring-boot-starter-hbase</artifactId>
-    <version>1.0.0.RELEASE</version>
+    <version>1.1.0.RELEASE</version>
 
     <name>spring-boot-starter-hbase</name>
     <url>https://github.com/SpringForAll/spring-boot-starter-hbase</url>
